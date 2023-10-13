@@ -4,6 +4,10 @@
    Recipe application with custom recipe uploads from <a href="https://www.udemy.com/course/the-complete-javascript-course/?kw=the+complete+javascript&src=sac" target="_blank">The Complete Javascript Course </a>.
 </div>
 
+## Live site
+
+- [Site](https://netlify-flavioporfirio86.netlify.app)
+
 ### Built With
 
 - [Javascript](https://www.javascript.com)

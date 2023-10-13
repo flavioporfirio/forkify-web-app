@@ -1,8 +1,8 @@
 import View from './View.js';
+import { Fraction } from 'fractional';
 
 import icons from 'url:../../img/icons.svg';
-// Parcel 2 - tudo que não é um arquivo de programação tem que conter url:caminho-para-o-arquivo
-import { Fraction } from 'fractional';
+
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
   _errorMessage = 'We could not find that recipe, Please try another one!';
@@ -126,6 +126,13 @@ class RecipeView extends View {
     `;
   }
 
+  _calculateFraction(num) {
+    const fraction = math.fraction(num);
+    const str = `${fraction.n}/${fraction.d}`;
+
+    return str;
+  }
+
   _generateMarkupIngredient(ing) {
     return `
       <li class="recipe__ingredient">
@@ -133,7 +140,7 @@ class RecipeView extends View {
           <use href="${icons}#icon-check"></use>
         </svg>
         <div class="recipe__quantity">${
-          ing.quantity ? new Fraction(ing.quantity).toString() : ''
+          ing.quantity ? new Fraction(ing.quantity) : ''
         }</div>
         <div class="recipe__description">
           <span class="recipe__unit">${ing.unit}</span>

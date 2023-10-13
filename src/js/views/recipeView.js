@@ -126,13 +126,6 @@ class RecipeView extends View {
     `;
   }
 
-  _calculateFraction(num) {
-    const fraction = math.fraction(num);
-    const str = `${fraction.n}/${fraction.d}`;
-
-    return str;
-  }
-
   _generateMarkupIngredient(ing) {
     return `
       <li class="recipe__ingredient">

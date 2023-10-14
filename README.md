@@ -6,7 +6,7 @@
 
 ## Live site
 
-- [Site](https://netlify-flavioporfirio86.netlify.app)
+- [Site](https://forkify-flavioporfirio86.netlify.app)
 
 ### Built With
 
@@ -24,7 +24,7 @@
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/flavioporfirio/forkify-web-app
 
 # Install dependencies
 $ npm install
